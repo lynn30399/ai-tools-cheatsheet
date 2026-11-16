@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code｜AI 開發工具速查</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main class="wrap">
+<p class="nav"><a href="../index.html">回到總表</a></p>
+
+<!-- 1 標題區 -->
+<h1>Claude Code</h1>
+<div class="file">CLAUDE.md</div>
+<p class="lead">Anthropic 的命令列寫程式工具，慣用的設定檔是 CLAUDE.md。</p>
+
+<!-- 2 怎麼載入 -->
+<h2>怎麼載入</h2>
+<ul><li>會讀目前資料夾和往上各層資料夾的 CLAUDE.md</li><li>CLAUDE.md 裡可以用 <code>@路徑</code> 匯入其他檔案</li></ul>
+
+<!-- 3 用在這個專案 -->
+<h2>用在這個專案</h2>
+<ul><li>專案已經有 AGENTS.md 時，另外建一個 CLAUDE.md，內容只寫一行 <code>@AGENTS.md</code></li><li>想補 Claude 專用的規則，寫在那一行下面</li></ul>
+
+<!-- 4 注意事項 -->
+<h2>注意事項</h2>
+<p>Windows 建 symlink 需要管理員權限或開發人員模式，建議用匯入，不要用 symlink。</p><div class="warn">資料有出入：一份官方文件說 Claude Code 只讀 CLAUDE.md，另一份和第三方整理提到沒有 CLAUDE.md 時會改讀 AGENTS.md，兩者並存以 CLAUDE.md 為準。需再確認最新版行為。</div>
+
+<!-- 5 官方連結與查證日期 -->
+<footer>
+<p>官方文件：<a href="https://code.claude.com/docs/en/memory">https://code.claude.com/docs/en/memory</a></p>
+<p>查證日期：2026-11-16</p>
+</footer>
+</main>
+</body>
+</html>

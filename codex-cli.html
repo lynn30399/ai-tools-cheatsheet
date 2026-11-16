@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codex CLI｜AI 開發工具速查</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main class="wrap">
+<p class="nav"><a href="../index.html">回到總表</a></p>
+
+<!-- 1 標題區 -->
+<h1>Codex CLI</h1>
+<div class="file">AGENTS.md</div>
+<p class="lead">OpenAI 的命令列寫程式工具，AGENTS.md 格式的原始推動者。</p>
+
+<!-- 2 怎麼載入 -->
+<h2>怎麼載入</h2>
+<ul><li>每次工作前都會先讀 AGENTS.md</li><li>先找全域（<code>~/.codex</code>），再從專案根目錄往下一層一層找</li><li>每一層會先看 <code>AGENTS.override.md</code>，沒有才看 <code>AGENTS.md</code></li></ul>
+
+<!-- 3 用在這個專案 -->
+<h2>用在這個專案</h2>
+<ul><li>直接把 AGENTS.md 放在專案根目錄，不用額外設定</li><li>某個子資料夾需要不同規則時，在那裡另放 AGENTS.override.md</li></ul>
+
+<!-- 4 注意事項 -->
+<h2>注意事項</h2>
+<p>空檔案會被忽略；沒讀到時，先確認是不是在正確的專案資料夾啟動。</p>
+
+<!-- 5 官方連結與查證日期 -->
+<footer>
+<p>官方文件：<a href="https://developers.openai.com/codex/guides/agents-md">https://developers.openai.com/codex/guides/agents-md</a></p>
+<p>查證日期：2026-11-16</p>
+</footer>
+</main>
+</body>
+</html>

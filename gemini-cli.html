@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemini CLI｜AI 開發工具速查</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main class="wrap">
+<p class="nav"><a href="../index.html">回到總表</a></p>
+
+<!-- 1 標題區 -->
+<h1>Gemini CLI</h1>
+<div class="file">GEMINI.md</div>
+<p class="lead">Google 的命令列 AI 工具，預設讀 GEMINI.md，但檔名可以改。</p>
+
+<!-- 2 怎麼載入 -->
+<h2>怎麼載入</h2>
+<ul><li>載入順序：使用者家目錄的全域檔、工作區與上層資料夾的檔、用到某個資料夾時才即時載入的檔</li><li>所有找到的檔案會合併後一起送給模型</li></ul>
+
+<!-- 3 用在這個專案 -->
+<h2>用在這個專案</h2>
+<ul><li>在 <code>settings.json</code> 的 <code>context.fileName</code> 加入 <code>AGENTS.md</code>，它就會改讀這個檔</li><li>也可以用 <code>@檔案</code> 把大檔案拆小</li></ul>
+
+<!-- 4 注意事項 -->
+<h2>注意事項</h2>
+<div class="warn">不改設定的話，Gemini CLI 預設不會讀 AGENTS.md。</div>
+
+<!-- 5 官方連結與查證日期 -->
+<footer>
+<p>官方文件：<a href="https://geminicli.com/docs/cli/gemini-md/">https://geminicli.com/docs/cli/gemini-md/</a></p>
+<p>查證日期：2026-11-16</p>
+</footer>
+</main>
+</body>
+</html>
