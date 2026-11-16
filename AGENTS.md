@@ -8,15 +8,17 @@
 ## 技術限制
 - 純 HTML + CSS，不用框架、不用打包工具、不用 JavaScript
 - 不載入外部字體或外部套件，確保 GitHub Pages 直接能開
-- 所有頁面共用 `assets/style.css`，不要在頁面裡寫行內樣式
+- 所有頁面共用 `style.css`，不要在頁面裡寫行內樣式
 
 ## 檔案結構
 ```
-index.html            首頁：工具總表
-assets/style.css      唯一的樣式檔
-templates/tool-page.html   新增工具頁時複製這個
-tools/<slug>.html     每個工具一頁
-AGENTS.md / CLAUDE.md 規則文件
+index.html          首頁：工具總表
+style.css           網站共用的樣式檔
+tool-page.html      新增工具頁面時使用的範本
+claude-code.html    Claude Code 工具介紹頁
+其他工具.html       其他 AI 工具介紹頁
+AGENTS.md           專案規則文件
+CLAUDE.md           Claude 的規則文件
 ```
 
 ## 命名規則
@@ -25,7 +27,7 @@ AGENTS.md / CLAUDE.md 規則文件
 - 圖片（如果有）放 `assets/img/`，檔名同 slug
 
 ## 新增一個工具頁的步驟
-1. 複製 `templates/tool-page.html` 到 `tools/<slug>.html`
+1. 複製 `tool-page.html` 到 `<slug>.html`
 2. 依下方「頁面格式」填滿每個區塊，不要刪區塊
 3. 在 `index.html` 的總表加一列（工具、設定檔名稱、一句話），順序照字母排
 4. 檢查：首頁連結能點、頁面內所有連結正確、日期已更新
